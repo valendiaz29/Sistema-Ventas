@@ -1,0 +1,253 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20261112022821
+Nombre de usuario: DESKTOP-C9LLFDE\valen
+Usuario RunAs: DESKTOP-C9LLFDE\valen
+Nombre de la configuración: 
+Máquina: DESKTOP-C9LLFDE (Microsoft Windows NT 10.0.19045.0)
+Aplicación host: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 4012
+PSVersion: 5.1.19041.6456
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.6456
+BuildVersion: 10.0.19041.6456
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es C:\Users\valen\Desktop\auditoria_completa.txt
+PS C:\Users\valen> cd $HOME\Desktop
+PS C:\Users\valen\Desktop> mkdir Sistema_Ventas
+cd Sistema_Ventas
+
+
+    Directorio: C:\Users\valen\Desktop
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        12/11/2026     03:00                Sistema_Ventas
+
+
+PS C:\Users\valen\Desktop\Sistema_Ventas> mkdir Frontend, Backend, BaseDatos
+
+
+    Directorio: C:\Users\valen\Desktop\Sistema_Ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        12/11/2026     03:00                Frontend
+d-----        12/11/2026     03:00                Backend
+d-----        12/11/2026     03:00                BaseDatos
+
+
+PS C:\Users\valen\Desktop\Sistema_Ventas> echo "Version 1.0 del Sistema de Ventas" > README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Version 1.0 del Sistema de Ventas"
+PS C:\Users\valen\Desktop\Sistema_Ventas> tree /F
+Listado de rutas de carpetas
+El número de serie del volumen es D4FC-416D
+C:.
+│   README.md
+│
+├───Backend
+├───BaseDatos
+└───Frontend
+PS C:\Users\valen\Desktop\Sistema_Ventas> https://github.com/valendiaz29/Sistema-Ventas.git
+https://github.com/valendiaz29/Sistema-Ventas.git : El término 'https://github.com/valendiaz29/Sistema-Ventas.git' no 
+se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe si escribió 
+correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ https://github.com/valendiaz29/Sistema-Ventas.git
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (https://github....tema-Ventas.git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+https://github.com/valendiaz29/Sistema-Ventas.git : El término 'https://github.com/valendiaz29/Sistema-Ventas.git' no
+se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe si escribió
+correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ https://github.com/valendiaz29/Sistema-Ventas.git
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (https://github....tema-Ventas.git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\valen\Desktop\Sistema_Ventas> pwd
+
+Path
+----
+C:\Users\valen\Desktop\Sistema_Ventas
+
+
+PS C:\Users\valen\Desktop\Sistema_Ventas> https://github.com/valendiaz29/Sistema-Ventas.git
+https://github.com/valendiaz29/Sistema-Ventas.git : El término 'https://github.com/valendiaz29/Sistema-Ventas.git' no 
+se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe si escribió 
+correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ https://github.com/valendiaz29/Sistema-Ventas.git
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (https://github....tema-Ventas.git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+https://github.com/valendiaz29/Sistema-Ventas.git : El término 'https://github.com/valendiaz29/Sistema-Ventas.git' no
+se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe si escribió
+correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ https://github.com/valendiaz29/Sistema-Ventas.git
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (https://github....tema-Ventas.git:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\valen\Desktop\Sistema_Ventas> git init
+Initialized empty Git repository in C:/Users/valen/Desktop/Sistema_Ventas/.git/
+PS C:\Users\valen\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\valen\Desktop\Sistema_Ventas> git commit -m "Día 1: Despliegue de la estructura base"
+[master (root-commit) e92df9e] Día 1: Despliegue de la estructura base
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+PS C:\Users\valen\Desktop\Sistema_Ventas> git remote add origin https://github.com/valendiaz29/Sistema-Ventas.git
+
+PS C:\Users\valen\Desktop\Sistema_Ventas> git branch -M main
+
+PS C:\Users\valen\Desktop\Sistema_Ventas> git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 295 bytes | 147.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/valendiaz29/Sistema-Ventas.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\valen\Desktop\Sistema_Ventas> pwd
+
+Path
+----
+C:\Users\valen\Desktop\Sistema_Ventas
+
+
+PS C:\Users\valen\Desktop\Sistema_Ventas> echo "Conectando al servidor SQL..." > BaseDatos\conexion.ps1
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Conectando al servidor SQL..."
+PS C:\Users\valen\Desktop\Sistema_Ventas> echo "Actualizacion Dia 2: Modulo DB agregado" >> README.md
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Actualizacion Dia 2: Modulo DB agregado"
+PS C:\Users\valen\Desktop\Sistema_Ventas> Get-Content README.md
+Version 1.0 del Sistema de Ventas
+Actualizacion Dia 2: Modulo DB agregado
+PS C:\Users\valen\Desktop\Sistema_Ventas> Get-Content README.md
+Version 1.0 del Sistema de Ventas
+Actualizacion Dia 2: Modulo DB agregado
+PS C:\Users\valen\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\valen\Desktop\Sistema_Ventas> git commit -m "Día 2: Actualización del módulo DB"
+[main f9950a6] Día 2: Actualización del módulo DB
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 BaseDatos/conexion.ps1
+PS C:\Users\valen\Desktop\Sistema_Ventas> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 526 bytes | 175.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/valendiaz29/Sistema-Ventas.git
+   e92df9e..f9950a6  main -> main
+PS C:\Users\valen\Desktop\Sistema_Ventas> mkdir Pruebas_Unitarias
+
+
+    Directorio: C:\Users\valen\Desktop\Sistema_Ventas
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        12/11/2026     03:26                Pruebas_Unitarias
+
+
+PS C:\Users\valen\Desktop\Sistema_Ventas> tree /F
+Listado de rutas de carpetas
+El número de serie del volumen es D4FC-416D
+C:.
+│   README.md
+│
+├───Backend
+├───BaseDatos
+│       conexion.ps1
+│
+├───Frontend
+└───Pruebas_Unitarias
+PS C:\Users\valen\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\valen\Desktop\Sistema_Ventas> git commit -m "Día 2: Agregados scripts de DB y carpeta de pruebas"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\valen\Desktop\Sistema_Ventas> git push
+Everything up-to-date
+PS C:\Users\valen\Desktop\Sistema_Ventas> Get-ChildItem BaseDatos
+
+
+    Directorio: C:\Users\valen\Desktop\Sistema_Ventas\BaseDatos
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        12/11/2026     03:22             64 conexion.ps1
+
+
+PS C:\Users\valen\Desktop\Sistema_Ventas> Get-Content README.md
+Version 1.0 del Sistema de Ventas
+Actualizacion Dia 2: Modulo DB agregado
+PS C:\Users\valen\Desktop\Sistema_Ventas> Get-ChildItem BaseDatos
+
+
+    Directorio: C:\Users\valen\Desktop\Sistema_Ventas\BaseDatos
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        12/11/2026     03:22             64 conexion.ps1
+
+
+PS C:\Users\valen\Desktop\Sistema_Ventas> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\valen\Desktop\Sistema_Ventas> git add 
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+PS C:\Users\valen\Desktop\Sistema_Ventas> git add .
+
+PS C:\Users\valen\Desktop\Sistema_Ventas> git commit -m "Día 2: Agregados scripts de DB y carpeta de pruebas"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\valen\Desktop\Sistema_Ventas> git push
+Everything up-to-date
+PS C:\Users\valen\Desktop\Sistema_Ventas> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\valen\Desktop\Sistema_Ventas> tree /F
+Listado de rutas de carpetas
+El número de serie del volumen es D4FC-416D
+C:.
+│   README.md
+│
+├───Backend
+├───BaseDatos
+│       conexion.ps1
+│
+├───Frontend
+└───Pruebas_Unitarias
+PS C:\Users\valen\Desktop\Sistema_Ventas> git log --oneline
+f9950a6 (HEAD -> main, origin/main) Día 2: Actualización del módulo DB
+e92df9e Día 1: Despliegue de la estructura base
+PS C:\Users\valen\Desktop\Sistema_Ventas> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20261112034737
+**********************
